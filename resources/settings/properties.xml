@@ -1,0 +1,15 @@
+<resources>
+	<property id="showHeartRate" type="boolean">true</property>
+	<property id="avgHeartRate" type="number">255</property>
+	<strings>
+        <string id="air_exposure_label">Air Exposure Score</string>
+        <string id="air_exposure_graph_label">Air Exposure Risk</string>
+        <string id="air_exposure_units">μg/m3</string>
+    </strings>
+    <fitContributions>
+        <fitField id="0" displayInChart="true" sortOrder = "0" precision="2"
+        chartTitle="@Strings.air_exposure_graph_label" dataLabel="@Strings.air_exposure_label"
+        unitLabel="@Strings.air_exposure_units" fillColor="#FF0000" 
+		displayInActivitySummary = "true"/>
+    </fitContributions>
+</resources>

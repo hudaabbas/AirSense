@@ -1,4 +1,6 @@
 <layout id="MainLayout">
-    <label x="center" y="5" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <bitmap id="id_monkey" x="center" y="30" filename="../drawables/monkey.png" />
+    <label x="center" y="80" text="@Strings.AppName" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label x="center" y="160" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="AirExposureLabel" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+// <!-- <bitmap id="id_monkey" x="center" y="160" filename="../drawables/monkey.png" /> -->
 </layout>

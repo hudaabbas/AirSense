@@ -1,0 +1,18 @@
+<settings>
+    <setting propertyKey="@Properties.showHeartRate" title="@Strings.ShowHeartRate">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.avgHeartRate" title="@Strings.AvgHeartRate">
+		<settingConfig type="numeric" min="70" max="255" />
+	</setting>
+    <!-- <setting propertyKey="@Properties.minimalGPSquality" title="@Strings.MinimalGPSquality" 
+	prompt="@Strings.MinimalGPSqualityPrompt">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.GpsQualityNotAvailable</listEntry>
+            <listEntry value="1">@Strings.GpsQualityLastKnown</listEntry>            
+            <listEntry value="2">@Strings.GpsQualityPoor</listEntry>            
+            <listEntry value="3">@Strings.GpsQualityUsable</listEntry>            
+            <listEntry value="4">@Strings.GpsQualityGood</listEntry>            	
+        </settingConfig>
+    </setting> -->   
+</settings>

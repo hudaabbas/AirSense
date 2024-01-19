@@ -13,25 +13,25 @@ class AirSenseApp extends Application.AppBase{
     static
     <init> {
     }
-    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 7; ]
+    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 8; ]
     function initialize() as Void {
-_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_7_26_start:
-[ "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc" 8 8 ]
+_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_8_26_start:
+[ "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc" 9 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_7_26_stop:
+_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_8_26_stop:
     }
-    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 12; ]
+    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 13; ]
     function onStart(state as Dictionary or Null) as Void {
     }
-    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 16; ]
+    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 19; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 20; ]
+    [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 24; ]
     function getInitialView() as Array<Views or InputDelegates> or Null {
-_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_20_65_start:
-[ "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc" 21 8 ]
+_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_24_65_start:
+[ "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc" 25 8 ]
         %tmp.1 = newa Array<Views or InputDelegates> 2;
         %tmp.5 = getv ? :AirSenseView;
         %tmp.2 = newc %tmp.5 ();
@@ -42,19 +42,19 @@ _Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_20_65_start:
         %tmp.12 = dup %tmp.7;
         %tmp.13 = aputv %tmp.12 1 %tmp.8;
         ret %tmp.13;
-_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_20_65_stop:
+_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_24_65_stop:
     }
 }
-[ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 26; ]
+[ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 30; ]
 function getApp() as AirSenseApp {
-_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_26_33_start:
-[ "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc" 27 4 ]
+_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_30_33_start:
+[ "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc" 31 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 AirSenseApp;
     ret %tmp.4;
-_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_26_33_stop:
+_Users_hudaabbas_MonkeyC_AirSense_source_AirSenseApp_mc_30_33_stop:
 }
 [ @file = "/Users/hudaabbas/MonkeyC/AirSense/source/AirSenseApp.mc"; @line = 1; ]
 <init> {

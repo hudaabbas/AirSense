@@ -6,7 +6,6 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
-        (:initialized) var id_monkey as Symbol;
         (:initialized) var LauncherIcon as Symbol;
     } // Drawables
 
@@ -18,12 +17,13 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_1277725160 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>5, :text=>$.Rez.Strings.prompt, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+            var rez_cmp_local_text_1985313194 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>80, :text=>$.Rez.Strings.AppName, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            var rez_cmp_local_bitmap_id_monkey = new WatchUi.Bitmap({:identifier=>"id_monkey", :rezId=>$.Rez.Drawables.id_monkey, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>30});
-            rez_cmp_local_bitmap_id_monkey.setLocation(((390 - rez_cmp_local_bitmap_id_monkey.width) * 0.5), rez_cmp_local_bitmap_id_monkey.locY);
+            var rez_cmp_local_text_2048535005 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>160, :text=>$.Rez.Strings.prompt, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            return [rez_cmp_local_text_1277725160, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_AirExposureLabel = new WatchUi.Text({:identifier=>"AirExposureLabel", :color=>Graphics.COLOR_BLUE, :locX=>(390 * 0.5), :locY=>((390 - dc.getFontHeight(Graphics.FONT_LARGE)) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            return [rez_cmp_local_text_1985313194, rez_cmp_local_text_2048535005, rez_cmp_local_text_AirExposureLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
@@ -38,9 +38,14 @@ module Rez {
     } // Menus
 
     module Strings {
+        (:initialized) var AvgHeartRate as Symbol;
         (:initialized) var menu_label_1 as Symbol;
         (:initialized) var menu_label_2 as Symbol;
+        (:initialized) var air_exposure_label as Symbol;
         (:initialized) var prompt as Symbol;
+        (:initialized) var air_exposure_graph_label as Symbol;
+        (:initialized) var air_exposure_units as Symbol;
+        (:initialized) var ShowHeartRate as Symbol;
         (:initialized) var AppName as Symbol;
     } // Strings
 
